@@ -1,0 +1,6 @@
+Qt-Builds/*
+*.user
+*.autosave
+*.pro.*
+xcode-build/*
+build*/*

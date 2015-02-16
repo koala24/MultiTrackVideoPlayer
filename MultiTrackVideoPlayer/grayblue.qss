@@ -1,0 +1,301 @@
+#_playPauseForwardBtn {
+    background: qlineargradient(x0:0,x1:1,y0:0,y1:1,stop:1 white, stop:0.3 #9d9b9b);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: #cccccc;
+    max-width: 40px;
+    max-height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+#_playPauseForwardBtn:hover {
+    background: qlineargradient(x0:0,x1:1,y0:0,y1:1,stop:1 white, stop:0.3 #b8b8b8);
+    border-color: #75a5ee;
+}
+
+#_playPauseForwardBtn:pressed {
+    background: qlineargradient(x0:0,x1:1,y0:0,y1:1,stop:1 gray, stop:0.3 #cccccc);
+}
+
+#_playPauseForwardBtn:focus {
+    outline: none;
+}
+
+#_playPauseForwardBtn:disabled {
+    background: qlineargradient(x0:0,x1:1,y0:0,y1:1,stop:1 white, stop:0.3 #d3d3d3);
+}
+
+#_playPauseForwardBtn:checked {
+    background: qlineargradient(x0:0,x1:1,y0:0,y1:1,stop:1 white, stop:0.3 #257ad9);
+    border-color: #9d9b9b;
+}
+
+#_playPauseBackwardBtn {
+    background: qlineargradient(x0:0,x1:1,y0:0,y1:1,stop:1 white, stop:0.3 #9d9b9b);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: #cccccc;
+    max-width: 40px;
+    max-height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+#_playPauseBackwardBtn:hover {
+    background: qlineargradient(x0:0,x1:1,y0:0,y1:1,stop:1 white, stop:0.3 #b8b8b8);
+    border-color: #75a5ee;
+}
+
+#_playPauseBackwardBtn:pressed {
+    background: qlineargradient(x0:0,x1:1,y0:0,y1:1,stop:1 gray, stop:0.3 #cccccc);
+}
+
+#_playPauseBackwardBtn:focus {
+    outline: none;
+}
+
+#_playPauseBackwardBtn:disabled {
+    background: qlineargradient(x0:0,x1:1,y0:0,y1:1,stop:1 white, stop:0.3 #d3d3d3);
+}
+
+#_playPauseBackwardBtn:checked {
+    background: qlineargradient(x0:0,x1:1,y0:0,y1:1,stop:1 white, stop:0.3 #257ad9);
+    border-color: #9d9b9b;
+}
+
+#_stopBtn {
+    background: qlineargradient(x0:0,x1:1,y0:0,y1:1,stop:1 white, stop:0.3 #9d9b9b);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25px;
+    border-color: #cccccc;
+    max-width: 50px;
+    max-height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+#_stopBtn:hover {
+    background: qlineargradient(x0:0,x1:1,y0:0,y1:1,stop:1 white, stop:0.3 #b8b8b8);
+    border-color: #75a5ee;
+    color: black;
+}
+
+#_stopBtn:pressed {
+    background: qlineargradient(x0:0,x1:1,y0:0,y1:1,stop:1 #cccccc, stop:0.3 red);
+}
+
+#_stopBtn:focus {
+    outline: none;
+}
+
+#_stopBtn:disabled {
+    background: qlineargradient(x0:0,x1:1,y0:0,y1:1,stop:1 white, stop:0.3 #d3d3d3);
+}
+
+#_currentTimeLabel {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #cccccc;
+    color: #262626;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+#_currentTimeLabel:disabled {
+    color: #737373;
+}
+
+#_maxTimeLabel {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #cccccc;
+    color: #262626;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#_maxTimeLabel:disabled {
+    color: #737373;
+}
+
+#_slider {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #d3d3d3;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    border-left-color: #78a1ce;
+    border-right-color: #78a1ce;
+}
+
+#_repeatCheckBox {
+    padding: 2px;
+    padding-right: 13px;
+    background-color: #d3d3d3;
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+#_repeatCheckBox:hover {
+    background-color: #60b6ed;
+    border-color: #d3d3d3;
+    color: black;
+}
+
+#_repeatCheckBox:focus {
+    outline: none;
+}
+
+#_zoomGroupBox {
+    padding-top: 12px;
+    background-color: #d3d3d3;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #75a5ee;
+}
+
+#_zoomGroupBox::title {
+    padding: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-top-color: #75a5ee;
+    subcontrol-origin: margin;
+    subcontrol-position: top center; /* position at the top center */
+}
+
+#_imageLabel {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d3d3d3;
+}
+
+#_videoWindowGroupBox {
+    background-color: #9d9b9b;
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-width: 1px;
+    border-radius: 2px;
+}
+
+QMenuBar {
+    background: qlineargradient(x1:0,x2:0,y1:0,y2:1,stop:0 #cccccc, stop:0.4 gray);
+    color: white;
+    border-style: solid;
+    border-bottom-color: #d3d3d3;
+    border-bottom-width: 1px;
+}
+
+QMenuBar::item {
+    spacing: 3px;
+    padding: 5px;
+    background: transparent;
+    color: white;
+}
+
+QMenuBar::item:selected {
+    background: #a8a8a8;
+}
+
+QMenuBar::item:pressed {
+    background: #888888;
+}
+
+QMenu {
+    background: #8f8c8c;
+    color: white;
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-width: 1px;
+}
+
+QMenu::item:selected {
+    background-color: #60b6ed;
+}
+
+QMenu::item:disabled {
+    color: #9d9b9b;
+}
+
+QMenu::separator {
+    height: 2px;
+    background: #d3d3d3;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+QStatusBar {
+    background: qlineargradient(x1:0,x2:0,y1:0,y2:1,stop:0.5 gray, stop:1 #cccccc);
+    color: white;
+    border-style: solid;
+    border-top-color: #d3d3d3;
+    border-top-width: 1px;
+}
+
+QMainWindow {
+    background-color: #898989;
+}
+
+QSlider::groove:horizontal {
+    border: 1px solid #bbb;
+    background: white;
+    height: 10px;
+    border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal {
+    background: qlineargradient(x0:0,x0:0,y1:1,y1:1,stop:1 #8ed1fc, stop:0.3 #3890c8);
+    border: 1px solid #777;
+    height: 10px;
+    border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+    background: #fff;
+    border: 1px solid #777;
+    height: 10px;
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #eee, stop:1 #ccc);
+    border: 1px solid #777;
+    width: 13px;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #fff, stop:1 #ddd);
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+    background: #bbb;
+    border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled {
+    background: #eee;
+    border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled {
+    background: #eee;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}

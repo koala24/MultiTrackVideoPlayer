@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Trackbar</class>
+ <widget class="QWidget" name="Trackbar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>646</width>
+    <height>234</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_6">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>6</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="_bufferingSpaceLabel">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QPushButton" name="_playPauseBackwardBtn">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../default.qrc">
+                 <normaloff>:/icons/backwardPlay</normaloff>:/icons/backwardPlay</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="_stopBtn">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string>Stop</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="_playPauseForwardBtn">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../default.qrc">
+                 <normaloff>:/icons/play</normaloff>:/icons/play</iconset>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="_bufferingGifLabel">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="_bufferingLabel">
+             <property name="text">
+              <string>Buffering</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="_sliderLayoutH">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="_currentTimeLabel">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>00:00</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSlider" name="_slider">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="tickPosition">
+              <enum>QSlider::TicksAbove</enum>
+             </property>
+             <property name="tickInterval">
+              <number>10</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="_maxTimeLabel">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>00:00</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="_repeatCheckBox">
+           <property name="text">
+            <string>Repeat</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Speed</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="_speedSlider">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>10</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="invertedControls">
+            <bool>false</bool>
+           </property>
+           <property name="tickPosition">
+            <enum>QSlider::TicksBothSides</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="_currentSpeedLineEdit">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>70</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="_zoomGroupBox">
+         <property name="title">
+          <string>Zoombar</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QPushButton" name="_resetRangeBtn">
+                <property name="text">
+                 <string>Reset Range</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="_minTimestampLineEdit">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="_backwardBtn">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="../default.qrc">
+                  <normaloff>:/icons/backward</normaloff>:/icons/backward</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="_currentTimestampLineEdit">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="baseSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="layoutDirection">
+                 <enum>Qt::LeftToRight</enum>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="_forwardBtn">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="../default.qrc">
+                  <normaloff>:/icons/forward</normaloff>:/icons/forward</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="_maxTimestampLineEdit">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QSlider" name="_zoomSlider">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>128</width>
+           <height>17</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <action name="actionPlayForward">
+   <property name="text">
+    <string>playForward</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../default.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>_playPauseForwardBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Trackbar</receiver>
+   <slot>onPlayPauseForwardClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>167</x>
+     <y>116</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>309</x>
+     <y>97</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_stopBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Trackbar</receiver>
+   <slot>onStopClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>127</x>
+     <y>115</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>74</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_backwardBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Trackbar</receiver>
+   <slot>onTimeBackwardClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>465</x>
+     <y>162</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>74</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_forwardBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Trackbar</receiver>
+   <slot>onTimeForwardClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>821</x>
+     <y>162</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>74</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_playPauseBackwardBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Trackbar</receiver>
+   <slot>onPlayPauseBackwardClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>26</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>74</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Trackbar</receiver>
+   <slot>onSliderValueChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>624</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>506</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_slider</sender>
+   <signal>sliderReleased()</signal>
+   <receiver>Trackbar</receiver>
+   <slot>onSliderReleased()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>624</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>506</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_minTimestampLineEdit</sender>
+   <signal>editingFinished()</signal>
+   <receiver>Trackbar</receiver>
+   <slot>onMinTimestampEditingFinished()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>205</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>506</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_maxTimestampLineEdit</sender>
+   <signal>editingFinished()</signal>
+   <receiver>Trackbar</receiver>
+   <slot>onMaxTimestampEditingFinished()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>914</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>506</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_resetRangeBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Trackbar</receiver>
+   <slot>onResetRangeBtnClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>51</x>
+     <y>250</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>506</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_currentTimestampLineEdit</sender>
+   <signal>editingFinished()</signal>
+   <receiver>Trackbar</receiver>
+   <slot>onCurrentTimestampEditingFinished()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>559</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>506</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_speedSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Trackbar</receiver>
+   <slot>onSpeedSliderValueChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>722</x>
+     <y>251</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>506</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_zoomSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>Trackbar</receiver>
+   <slot>onZoomSliderMoved(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>416</x>
+     <y>151</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>397</x>
+     <y>207</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_slider</sender>
+   <signal>sliderPressed()</signal>
+   <receiver>Trackbar</receiver>
+   <slot>onSliderPressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>275</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_slider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>Trackbar</receiver>
+   <slot>onSliderMoved(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>322</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>322</x>
+     <y>116</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onPlayPauseForwardClicked()</slot>
+  <slot>onSliderMoved(int)</slot>
+  <slot>onStopClicked()</slot>
+  <slot>onTimeForwardClicked()</slot>
+  <slot>onTimeBackwardClicked()</slot>
+  <slot>onPlayPauseBackwardClicked()</slot>
+  <slot>onSliderValueChanged(int)</slot>
+  <slot>onSliderReleased()</slot>
+  <slot>onZoomSliderMoved(int)</slot>
+  <slot>onMinTimestampEditingFinished()</slot>
+  <slot>onMaxTimestampEditingFinished()</slot>
+  <slot>onResetRangeBtnClicked()</slot>
+  <slot>onCurrentTimestampEditingFinished()</slot>
+  <slot>onSpeedSliderValueChanged()</slot>
+  <slot>onFinished()</slot>
+  <slot>onSliderPressed()</slot>
+ </slots>
+</ui>

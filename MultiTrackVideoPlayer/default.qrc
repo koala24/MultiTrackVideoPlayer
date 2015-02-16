@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file alias="play">icons/media-playback-start.png</file>
+        <file alias="pause">icons/media-playback-pause.png</file>
+        <file alias="backward">icons/backward.png</file>
+        <file alias="forward">icons/forward.png</file>
+        <file alias="backwardPlay">icons/backwardPlay.png</file>
+        <file alias="buffering">icons/arrows.gif</file>
+    </qresource>
+    <qresource prefix="/stylesheets">
+        <file alias="grayBlue">grayblue.qss</file>
+    </qresource>
+</RCC>
